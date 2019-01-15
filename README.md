@@ -2,17 +2,17 @@
 Minimal One Pager as short presentation of latest projects.
 
 ## View:
-[React Quiz](https://megfan.github.io)
+[Portfolio](https://megfan.github.io)
 
 ## Built With
 
-* ReactJS
 * Html5
-* Sass
-* Scroll Magic Tool
+* CSS
+* jQuery
+* Java Script
 
 ### RPD
 
-### Authors
+### Author
 
 * **Margaret Staszewska**
