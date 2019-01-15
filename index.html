@@ -2,166 +2,268 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
     <title>Meg_portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neuton:300,400,700,800" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</script>
 </head>
-<body class='container'>
-    <div id="app" class='container'></div>
-
-    <div class="about about__main">
-        <span class="about__main-text">Meg Staszewska</span>
-    </div>
-    <div class="about about__sub">
-        <span class="about__sub-text">Hi! I'm Meg, junior frontend developer (java script,
-            react, html, sass, css, jquery), senior graphic designer (photoshop, illustrator,
-            in design, after effect, lightroom, flash), dog and jazz lover from Warsaw.
-            I design and develop websites and apps with a focus on usability and simple design.
-
-        </span>
-    </div>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+  <section id='loader_sec'>
+        <div class="pre-container">          
+            <div id="loader"></div>
+        </div>
+        <h4>Loading</h4>
+  </section>
+  <div class="main-container">
         
-    <div class="portfolio">
-        <div class="portfolio__txt">
-            <h2 class="portfolio__txt__heading">React Quiz</h2>
-            <p class="portfolio__txt__description">A multiple choice quiz made in ReactJS
-                    as a final project at Coders Lab bootcamp. It contains 20 questions
-                    about Java Script and ReactJS.
-            </p>
-            <ul class="portfolio__txt__list">
-                <li class="portfolio__txt__list-item">ReactJS</li>
-                <li class="portfolio__txt__list-item">React Router</li>
-                <li class="portfolio__txt__list-item">React Treansition Group</li>
-                <li class="portfolio__txt__list-item">API Fetching</li>
-                <li class="portfolio__txt__list-item">SCSS</li>
-                <li class="portfolio__txt__list-item">animateScroll</li>
-            </ul>
-            <a href="https://github.com/megfan/React_Quiz">
-                <button class="btn">View code</button>  
+  <section class="sec_1">
+    <header class="header_section">
+        <nav class="header_nav">
+            <a href="#" class="logo_box">
+                <img src="./img/2.png" alt="Logo" class="logo"/>
             </a>
-              
-        </div>
-    </div>
-
-    <div class="portfolio__pic">
-            <img src="img/g1.png" alt="Gallery 1" class="portfolio__pic__1">
-            <div class="portfolio__pic__before">
-                <a href="https://megfan.github.io/React_Quiz/#/">View Demo</a>
-            </div>
-    </div>
-
-    <div class="portfolio">
-        <div class="portfolio__txt">
-            <h2 class="portfolio__txt__heading">NaHalna</h2>
-            <p class="portfolio__txt__description">This is a one page webpage made for NaHalna - graphic designer.
-                It uses CSS Grid, Scroll Magic, jQuery and gallery
-                section made in Java SCript. I also included Font Awesome and Google Fonts.
-                Website is fully responsive.
-            </p>
-            <ul class="portfolio__txt__list">
-                <li class="portfolio__txt__list-item">HTML5</li>
-                <li class="portfolio__txt__list-item">SASS</li>
-                <li class="portfolio__txt__list-item">Java Script</li>
-                <li class="portfolio__txt__list-item">jQuery</li>
-                <li class="portfolio__txt__list-item">CSS Grid</li>
-                <li class="portfolio__txt__list-item">Scroll Magic</li>
+            <ul class="menu">
+                <li class='menu_item'>who</li>
+                <li class='menu_item'>work</li>
+                <li class='menu_item'>Say Hi</li>
             </ul>
-            <a href="https://github.com/megfan/NaHalna_project">
-                <button class="btn">View code</button>  
-            </a>   
+        </nav>
+        <div class="header_title">
+            <h1 class="header_title_first">Designer & Front-end Developer <br /> from Warsaw, Poland.</h1>
+            <h2 class="header_title_second">Hello, I'm Meg! I design and code beautifully simple things, and I love what I do.</h2>
         </div>
-    </div>
-
-    <div class="portfolio__pic">
-            <img src="img/g2.png" alt="Gallery 2" class="portfolio__pic__1">
-            <div class="portfolio__pic__before">
-                <a href="https://megfan.github.io/NaHalna_project/">View Demo</a>
-            </div>
-    </div>
-
-    <div class="portfolio">
-        <div class="portfolio__txt">
-            <h2 class="portfolio__txt__heading">MakeUpYourself</h2>
-            <p class="portfolio__txt__description">A simple One Pager made during Frontend Developer Course. Contains slider, simple calculator and contact form. Design was provided by Coders Lab.
+        <div class="scroll">
+            <p>Scroll or die</p>
+        </div>          
+    </header>    
+  </section>
+  <section class="sec_2">
+      <div class="about_sec">
+        <div class="deco_line"></div>
+        <div class="deco_title">About</div>
+        <div class="about_text">
+            <h1 class="about_h1" data-aos="fade-left" data-aos-duration="800">
+                Constantly moving and ready to experiment with new things.
+            </h1>
+            <p class="text" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                Hi! I'm Meg, junior frontend developer & senior graphic designer from Warsaw.
+                Over the past eight years, I've had the pleasure of working with a wide variety of brands across the entertainment, automotive and financial industries.
+                agencies, consulted for startups,
+                and collaborated with talented people to create digital products for both business and consumer use.
+                I'm quietly confident, naturally curious, and perpetually improving my chops.
+                I design and develop websites and apps with a focus on usability and simple design.
             </p>
-            <ul class="portfolio__txt__list">
-                <li class="portfolio__txt__list-item">HTML5</li>
-                <li class="portfolio__txt__list-item">SASS</li>
-                <li class="portfolio__txt__list-item">CSS3</li>
-                <li class="portfolio__txt__list-item">jQuery</li>
-                <li class="portfolio__txt__list-item">Java Script</li>
+        </div>
+        <div class="btn_about">
+            <div class="btn_item resume" onclick="window.open('./img/M.StaszewskaCV_2018.pdf', '_blank');" data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">View Resume &raquo;</div>
+            <div class="btn_item LinkedIn" onclick="window.open('https://www.linkedin.com/in/margaretsta' , '_blank');" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">View on LinkedIn &raquo;</div>
+        </div>  
+      </div>
+  </section>
+  <section class="sec_3">
+
+      <div class="work_sec">
+        <div class="deco_line sec3"></div>
+        <div class="deco_title sec3_text">Recent Work</div>
+        <div class="about_text">
+            <h1 class="about_h1" data-aos="fade-left" data-aos-duration="800">
+                Here are a few recent projects.
+            </h1>
+        </div>   
+            <div class="work_card ">
+                <div class="project">
+                    <div class="project__card one" data-aos="fade-left" data-aos-duration="1500" >
+                        <a href="https://megfan.github.io/NaHalna_project/" target="_blank" class="project__image">
+                            <img src="./img/g2.png" alt="NaHalna">
+                        </a>                           
+                    </div>
+                    <div class="project__detail one_detail">                 
+                        <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000" ></div>
+                        <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" onclick="window.open('https://megfan.github.io/NaHalna_project/', '_blank');">NaHalna</h2>
+                        <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">HTML5 / SASS / JS / jQuery / Scroll Magic</small>
+                        <div class="btn_item_project" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                            <a href="https://github.com/megfan/NaHalna_project" target="_blank">View Code &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                        <div class="project__card two" data-aos="fade-right" data-aos-duration="1500">
+                            <a href="https://megfan.github.io/Weather_App/" target="_blank" class="project__image">
+                                <img src="./img/g5.png" alt="Weather_App">
+                            </a>                           
+                        </div>
+                        <div class="project__detail two_detail">                 
+                            <div class="project_deco_line" data-aos="fade-left" data-aos-duration="1000"></div>
+                            <h2 class="project__title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"
+                            onclick="window.open('https://megfan.github.io/Weather_App/', '_blank');">Weather App</h2>
+                            <small class="project__category" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">ReactJS / Html5 / CSS / axios</small>
+                            <div class="btn_item_project" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                                <a href="https://github.com/megfan/Weather_App" target="_blank">View Code &raquo;</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="project">
+                    <div class="project__card one" data-aos="fade-left" data-aos-duration="1500">
+                        <a href="https://megfan.github.io/React_Quiz/#/" target="_blank" class="project__image">
+                            <img src="./img/g1.png" alt="React_Quiz">
+                        </a>                           
+                    </div>
+                    <div class="project__detail one_detail">                 
+                        <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000"></div>
+                        <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"
+                        onclick="window.open('https://megfan.github.io/React_Quiz/#/', '_blank');">React Quiz</h2>
+                        <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">ReactJS / React Router / API Fetching / Sass / animateScroll</small>
+                        <div class="btn_item_project" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                            <a href="https://github.com/megfan/React_Quiz" target="_blank">View Code &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__card two" data-aos="fade-right" data-aos-duration="1500">
+                        <a href="https://megfan.github.io/PixaBay_Finder/" target="_blank" class="project__image">
+                            <img src="./img/g6.png" alt="PixaBay_Finder">
+                        </a>                           
+                    </div>
+                    <div class="project__detail two_detail">                 
+                        <div class="project_deco_line" data-aos="fade-left" data-aos-duration="1000"></div>
+                        <h2 class="project__title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"
+                        onclick="window.open('https://megfan.github.io/PixaBay_Finder/', '_blank');">PixaBay Finder</h2>
+                        <small class="project__category" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">ReactJS / Material UI / RDialog box / PixaBay API / Axios</small>
+                        <div class="btn_item_project" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                            <a href="https://github.com/megfan/PixaBay_Finder" target="_blank" >View Code &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__card one" data-aos="fade-left" data-aos-duration="1500">
+                        <a href="https://megfan.github.io/Advanced_CSS_Course/" target="_blank" class="project__image">
+                            <img src="./img/g4.png" alt="Advanced_CSS_Course">
+                        </a>                           
+                    </div>
+                    <div class="project__detail one_detail">                 
+                        <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000"></div>
+                        <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"
+                        onclick="window.open('https://megfan.github.io/Advanced_CSS_Course/', '_blank');">Advanced_CSS_Course</h2>
+                        <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">HTML5 / CSS3 / SCSS</small>
+                        <div class="btn_item_project" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                            <a href="https://github.com/megfan/Advanced_CSS_Course" target="_blank" >View Code &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__card two" data-aos="fade-right" data-aos-duration="1500">
+                        <a href="https://megfan.github.io/Shooping_Card/" target="_blank" class="project__image">
+                            <img src="./img/g7a.png" alt="Shooping_Card">
+                        </a>                           
+                    </div>
+                    <div class="project__detail two_detail">                 
+                        <div class="project_deco_line" data-aos="fade-left" data-aos-duration="1000"></div>
+                        <h2 class="project__title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"
+                        onclick="window.open('https://megfan.github.io/Shooping_Card/', '_blank');">Shopping Cart</h2>
+                        <small class="project__category" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">Java Script</small>
+                        <div class="btn_item_project" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                            <a href="https://github.com/megfan/Shooping_Card" target="_blank">View Code &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__card one" data-aos="fade-left" data-aos-duration="1500">
+                        <a href="https://megfan.github.io/MakeUpYourself_onepage/" target="_blank" class="project__image">
+                            <img src="./img/g3.png" alt="MakeUpYourself">
+                        </a>                           
+                    </div>
+                    <div class="project__detail one_detail">                 
+                        <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000"></div>
+                        <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"
+                        onclick="window.open('https://megfan.github.io/MakeUpYourself_onepage/', '_blank');">Make Up Yourself</h2>
+                        <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">html / CSS / jQuery / Java Script</small>
+                        <div class="btn_item_project" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                            <a href="https://github.com/megfan/MakeUpYourself_onepage" target="_blank">View Code &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+  </section>
+  <section class="sec_4">
+    <div class="skill_sec">
+        <div class="deco_line"></div>
+        <div class="deco_title">Technical Skills</div>
+        <div class="skills_container">
+            <ul class="skills_list">
+                <li class='list_item'>React.js</li>
+                <li class='list_item'>Java Script</li>
+                <li class='list_item'>jQuery</li>
+                <li class='list_item'>ECmaScript 6</li>
+                <li class='list_item'>CSS / SASS</li>
+                <li class='list_item'>HTML</li>
             </ul>
-            <a href="https://github.com/megfan/MakeUpYourself_onepage">
-                <button class="btn">View code</button>  
-            </a>    
-        </div>
-    </div>
-        
-    <div class="portfolio__pic">
-            <img src="img/g3.png" alt="Gallery 3" class="portfolio__pic__1">
-            <div class="portfolio__pic__before">
-                <a href="https://megfan.github.io/MakeUpYourself_onepage/">View Demo</a>
-            </div>
-    </div>
-
-    <div class="portfolio">
-        <div class="portfolio__txt">
-            <h2 class="portfolio__txt__heading">Advanced CSS Course</h2>
-            <p class="portfolio__txt__description">A simple one page website made as a complementing my knowledge in the SASS field. 
-                    This project was part of the advanced CSS course by Jonas Schmedtmann.
-            </p>
-            <ul class="portfolio__txt__list">
-                <li class="portfolio__txt__list-item">HTML5</li>
-                <li class="portfolio__txt__list-item">SASS</li>
-                <li class="portfolio__txt__list-item">CSS3</li>
+            <ul class="skills_list sec_list">
+                <li class='list_item'>Adobe Illustrator</li>
+                <li class='list_item'>Adobe Photoshop</li>
+                <li class='list_item'>Adobe After Effect</li>
+                <li class='list_item'>Adobe Indesign</li>
+                <li class='list_item'>Web Design</li>
+                <li class='list_item'>UI/UX Design</li>
             </ul>
-            <a href="https://github.com/megfan/Advanced_CSS_Course">
-                <button class="btn">View code</button>  
-            </a>    
-        </div>
+        </div>          
     </div>
-        
-    <div class="portfolio__pic">
-            <img src="img/g4.png" alt="Gallery 4" class="portfolio__pic__1">
-            <div class="portfolio__pic__before">
-                <a href="https://megfan.github.io/Advanced_CSS_Course/">View Demo</a>
+  </section>  
+  <section class="sec_5">
+        <div class="contact_sec">
+            <div class="deco_line"></div>
+            <div class="deco_title">Contact</div>
+            <div class="about_text">
+                <h1 class="about_h1">
+                    Uncover the potential of your project.
+                </h1>
+                <p class="text">
+                    You can reach me via email at megfa@yahoo.com.
+                </p>
             </div>
-    </div>
-   
-    <div class="contact contact__main">
-        <span class="contact__main-text">Contact</span>
-    </div>
-    <div class="contact contact__sub">
-        <span class="contact__sub-text">For projects or questions:
-            <p>megfa@yahoo.com</p>
-        </span>
-        <span class="contact__sub-text">Other:
-            <p>
-            <a href="https://www.linkedin.com/in/margaretsta">
-                <img src="img/in.png" alt="LinkeIn" class="link__img"/>
-            </a>
-            <a href="https://github.com/megfan">
-                <img src="img/git.png" alt="GitHub" class="link__img"/>
-            </a>
-            <a href="https://www.linkedin.com/in/margaretsta">
-                <img src="img/pic.png" alt="LinkeIn" class="link__img"/>
-            </a>
-            </p>
-        </span>
-    </div>
-
-
-    <div class="footer footer__grid">
-        <span class="footer__grid__text">Copyright&copy 2018 Meg Fantom</span>
-    </div>
-    <div class="footer footer__blank">
-            
+            <div class="btn_about">
+                <div class="btn_item resume">Say Hi &raquo;</div>
+            </div>  
         </div>
+  </section>
+  <section class="sec_6">
+        <footer>
+            <div class="social_box">             
+                <svg class="icon" onclick="window.open('https://www.linkedin.com/in/margaretsta', '_blank');">
+                    <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
+                </svg>
+                <svg class="icon" onclick="window.open('https://github.com/megfan', '_blank');">
+                    <use xlink:href="./img/sprite.svg#icon-github"></use>
+                </svg>     
+                <svg class="icon" onclick="window.open('http://megfoto.wixsite.com/mfantom', '_blank');">
+                    <use xlink:href="./img/sprite.svg#icon-image"></use>
+                </svg>
+            </div>
+            <div class="footer_box">
+                <span class="footer__text">Copyright© 2018 Meg Fantom</span>
+            </div>
+        </footer>
+  </section>
+    <div class="container">
+        <div class="grid">
+            <div class="vl"></div>
+            <div class="vl"></div>
+            <div class="vl"></div>
+            <div class="vl"></div>
+        </div>
+    </div>
+</div>
 
-    
-
-
-
-    
-    <script src="js/out.js"></script>
-<script type="text/javascript" src="out.js"></script></body>
+    <!-- <script src='3D-Interactive-Image-Hover-Effect-With-jQuery-CSS3-hover3d/source/js/jquery.hover3d.js'></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/app.js"></script>
+</body>
